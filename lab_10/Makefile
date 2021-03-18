@@ -1,8 +1,8 @@
 CXX = g++
-CXXFLAGS = -O2 -Wall -Werror -std=c++03 -pedantic -Iinclude
+CXXFLAGS = -O2 -Wall -Werror -std=c++11 -pedantic -Iinclude
 LDFLAGS = 
 
-EXE = lab_13
+EXE = lab_10
 SRCDIR = src
 BINDIR = bin
 

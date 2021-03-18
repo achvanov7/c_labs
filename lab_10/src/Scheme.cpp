@@ -6,6 +6,8 @@ Scheme::Scheme(int capacity) {
 }
     
 Scheme::~Scheme() {
+    for (int i = 0; i < size; ++i) 
+        delete figures_[i];
     delete [] figures_;
 }
 
@@ -26,7 +28,7 @@ void Scheme::remove_figure( int id) {
     }
 }
 
-void Scheme:: print_all_figures() {
+void Scheme:: print_all_figures() const {
     for (int i = 0; i < size; i++) {
         figures_[i]->print();
     }

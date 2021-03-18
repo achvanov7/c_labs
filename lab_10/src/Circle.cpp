@@ -4,9 +4,10 @@ Circle::Circle(int id, int x, int y, int radius, const char* label)
     : Figure(id, x, y) {
         this->radius = radius;
         int len = strlen(label);
-        this->label = new char[len];
+        this->label = new char[len + 1];
         for (int i = 0; i < len; i++)
             this->label[i] = label[i];
+        this->label[len] = '\0';
 }
 
  
